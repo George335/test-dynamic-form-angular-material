@@ -5,9 +5,11 @@ import {
   import { FormGroup } from "@angular/forms";
   import { FieldConfig } from "../../field.interface";
   import { InputComponent } from "../input/input.component";
+  import { ButtonComponent } from '../button/button.component';
 
   const componentMapper = {
-    input: InputComponent
+    input: InputComponent,
+    button: ButtonComponent
     };
 
 @Directive({

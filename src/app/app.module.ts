@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { InputComponent } from './components/input/input.component';
+import { ButtonComponent } from './components/button/button.component';
 import { DynamicFieldDirective } from './components/dynamic-field/dynamic-field.directive';
 import { DynamicFormComponent } from './components/dynamic-form/dynamic-form.component';
 
@@ -13,8 +14,10 @@ import { DynamicFormComponent } from './components/dynamic-form/dynamic-form.com
   declarations: [
     AppComponent,
     InputComponent,
+    ButtonComponent,
     DynamicFieldDirective,
-    DynamicFormComponent
+    DynamicFormComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +29,8 @@ import { DynamicFormComponent } from './components/dynamic-form/dynamic-form.com
   providers: [],
   bootstrap: [AppComponent],
   entryComponents: [
-    InputComponent
+    InputComponent,
+    ButtonComponent
     ]
 })
 export class AppModule { }
