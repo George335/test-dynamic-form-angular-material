@@ -15,7 +15,7 @@ export class AppComponent {
   cursoConfig: FieldConfig[] = [
     {
       type: "input",
-      label: "Username",
+      label: "Usuario",
       inputType: "text",
       name: "name",
       validations: [
@@ -33,7 +33,7 @@ export class AppComponent {
     },
     {
       type: "input",
-      label: "Email Address",
+      label: "Correo Electrónico",
       inputType: "email",
       name: "email",
       validations: [
@@ -50,6 +50,26 @@ export class AppComponent {
           message: "Invalid email"
         }
       ]
+    },
+    {
+      type: "select",
+      label: "País",
+      name: "country",
+      value: "UK",
+      options: ["India", "UAE", "UK", "US"]
+    },
+    {
+      type: "radiobutton",
+      label: "Género",
+      name: "gender",
+      options: ["Male", "Female"],
+      value: "Male"
+    },
+    {
+      type: "checkbox",
+      label: "Accept Terms",
+      name: "term",
+      value: true
     },
     {
       type: "button",

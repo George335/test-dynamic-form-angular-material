@@ -9,6 +9,9 @@ import { InputComponent } from './components/input/input.component';
 import { ButtonComponent } from './components/button/button.component';
 import { DynamicFieldDirective } from './components/dynamic-field/dynamic-field.directive';
 import { DynamicFormComponent } from './components/dynamic-form/dynamic-form.component';
+import { SelectComponent } from './components/select/select.component';
+import { RadiobuttonComponent } from './components/radiobutton/radiobutton.component';
+import { CheckboxComponent } from './components/checkbox/checkbox.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,10 @@ import { DynamicFormComponent } from './components/dynamic-form/dynamic-form.com
     ButtonComponent,
     DynamicFieldDirective,
     DynamicFormComponent,
-    ButtonComponent
+    ButtonComponent,
+    SelectComponent,
+    RadiobuttonComponent,
+    CheckboxComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +36,10 @@ import { DynamicFormComponent } from './components/dynamic-form/dynamic-form.com
   bootstrap: [AppComponent],
   entryComponents: [
     InputComponent,
-    ButtonComponent
+    ButtonComponent,
+    SelectComponent,
+    RadiobuttonComponent,
+    CheckboxComponent
     ]
 })
 export class AppModule { }

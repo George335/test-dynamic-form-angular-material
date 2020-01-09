@@ -6,10 +6,16 @@ import {
   import { FieldConfig } from "../../field.interface";
   import { InputComponent } from "../input/input.component";
   import { ButtonComponent } from '../button/button.component';
+  import { SelectComponent } from '../select/select.component';
+import { RadiobuttonComponent } from '../radiobutton/radiobutton.component';
+import { CheckboxComponent } from '../checkbox/checkbox.component';
 
   const componentMapper = {
     input: InputComponent,
-    button: ButtonComponent
+    button: ButtonComponent,
+    select: SelectComponent,
+    radiobutton: RadiobuttonComponent,
+    checkbox: CheckboxComponent
     };
 
 @Directive({
